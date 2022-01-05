@@ -1,6 +1,7 @@
+import { StyledContainer } from "./styled"
 
 export const Container = ({ children }) => (
-    <main>
+    <StyledContainer>
         {children}
-    </main>
+    </StyledContainer>
 )

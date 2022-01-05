@@ -1,14 +1,15 @@
+import { StyledWrapper, StyledCharacter, StyledParagraph, StyledImage } from "./styled";
 
 export const Characters = ({ data }) => {
-
     return (
-        <h1>Hello</h1>
-        // <>
-        //     {data.map((character) => (
-        //         <div>{character.name}</div>
-        //     )
-        //     )}
-        // </>
+        <StyledWrapper>
+        {data &&
+                data.map((character, index) => (
+                    <StyledCharacter key={`key-${index}`}>
+                        <StyledImage src = {character.image} alt=""/>
+                        <StyledParagraph>{character.name}</StyledParagraph>
+                    </StyledCharacter>
+                ))}
+        </StyledWrapper>
     );
-
 };
