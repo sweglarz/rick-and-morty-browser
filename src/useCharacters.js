@@ -7,23 +7,6 @@ export const useCharacters = () => {
     const { data } = characters;
     const api = `https://rickandmortyapi.com/api/character/?page=${page}`;
 
-    // useEffect(() => {
-    //     (async function () {
-    //         try {
-    //             const { data } = await axios.get(api);
-    //             setCharacters(
-    //                 {
-    //                     data: data.results,
-    //                 }
-    //             );
-    //         }
-    //         catch {
-    //             setCharacters([{
-    //                 state: "error"
-    //             }]);
-    //         };
-    //     })();
-    // }, [api]);
  useEffect(() => {
         const getCharacters = async () => {
             try {
@@ -40,7 +23,7 @@ export const useCharacters = () => {
                 });
             };
         };
-        setTimeout(getCharacters, 2000);
+        setTimeout(getCharacters);
     }, [api]);
     return { data, setPage };
 };
