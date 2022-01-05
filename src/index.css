@@ -3,4 +3,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url("./images/background.png");
+  background-position:top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
