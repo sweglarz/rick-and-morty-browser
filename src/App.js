@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Buttons } from './Buttons';
+import { Characters } from './Characters';
+import { Container } from './Container';
+import { useCharacters } from "./useCharacters"
 
 function App() {
+
+  const {data, setPage} = useCharacters();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+      <h1>Rick And Morty Characters</h1>
+      <Container>
+        <Buttons setPage={setPage} />
+        <Characters data={data}/>
+      </Container>
+    </>
+
   );
 }
 
