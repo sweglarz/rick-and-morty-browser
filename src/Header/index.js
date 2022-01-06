@@ -5,7 +5,7 @@ import { StyledImage, StyledParagraph } from "./styled"
 export const Header = () => (
     <>
         <StyledImage src={title} alt=""/>
-        <StyledParagraph>Browser</StyledParagraph>
+        <StyledParagraph>...Browser</StyledParagraph>
     </>
 )
 
