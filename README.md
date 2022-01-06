@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# In progress...
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here you can see the current state => [Click](https://sweglarz.github.io/rick-and-morty-browser/)
+
 
 ## Available Scripts
 
