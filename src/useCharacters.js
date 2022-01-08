@@ -18,6 +18,7 @@ export const useCharacters = () => {
                 setCharacters(
                     {
                         data: data.results,
+                        info: data.info,
                         status: "success"
                     }
                 );
@@ -30,7 +31,8 @@ export const useCharacters = () => {
         };
         setTimeout(getCharacters, 400);
     }, [api]);
-    return { data, setPage, setSearch, setStatus, setGender, setSpecies };
+
+    return { data, setPage, setSearch, setStatus, setGender, setSpecies};
 };
 
 
