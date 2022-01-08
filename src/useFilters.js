@@ -1,13 +1,13 @@
-export const status = ["Alive", 
-"Dead", 
-"Unknown"];
+export const status = ["Alive",
+    "Dead",
+    "Unknown"];
 
-export const gender = ["Female", 
-"Male", 
-"Genderless", 
-"Unknown"];
+export const gender = ["Female",
+    "Male",
+    "Genderless",
+    "Unknown"];
 
-export const species = [ "Human",
+export const species = ["Human",
     "Alien",
     "Humanoid",
     "Poopybutthole",
@@ -16,5 +16,4 @@ export const species = [ "Human",
     "Animal",
     "Disease",
     "Robot",
-    "Cronenberg",
-    "Planet",]
+    "Cronenberg"];
