@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledForm = styled.form`
     display: flex;
     justify-content: space-around;
-    font-family: 'Kanit', sans-serif;
 `;
 export const StyledLabel = styled.label`
     flex-basis: 15%;
@@ -14,7 +13,7 @@ export const StyledSearch = styled(StyledLabel)`
 `;
 export const StyledInput = styled.input`
     font-family: 'Kanit', sans-serif;
-    padding: 10px;
+    padding: 10px 10px 4px;
     max-width: 250px;
     width: 100%;
     border: none;

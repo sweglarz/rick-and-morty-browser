@@ -12,7 +12,6 @@ import { status, gender, species } from "../useFilters";
 
 export const Search = ({ setSearch, setStatus, setPage, setGender, setSpecies }) => (
     <StyledForm>
-
         <StyledLabel>
             <StyledSpan>Status</StyledSpan>
             <StyledSelect
@@ -35,7 +34,6 @@ export const Search = ({ setSearch, setStatus, setPage, setGender, setSpecies })
                 )))}
             </StyledSelect>
         </StyledLabel>
-
         <StyledLabel>
             <StyledSpan>Gender</StyledSpan>
             <StyledSelect
