@@ -29,7 +29,7 @@ export const useCharacters = () => {
                 });
             };
         };
-        setTimeout(getCharacters, 400);
+        setTimeout(getCharacters);
     }, [api]);
 
     return { data, setPage, setSearch, setStatus, setGender, setSpecies, search};
