@@ -6,7 +6,7 @@ import { Search } from './Search';
 import { useCharacters } from "./useCharacters";
 
 function App() {
-  const { data, setPage, setSearch, setStatus, setGender, setSpecies } = useCharacters();
+  const { data, setPage, setSearch, setStatus, setGender, setSpecies, search } = useCharacters();
 
   return (
     <>
@@ -20,6 +20,7 @@ function App() {
           setSpecies={setSpecies} />
         <Characters
           data={data}
+          search={search}
         />
         <Buttons
           setPage={setPage}
@@ -27,6 +28,6 @@ function App() {
       </Container>
     </>
   );
-}
+};
 
 export default App;

@@ -6,7 +6,7 @@ import {
     StyledImage
 } from "./styled";
 
-export const Characters = ({ data }) => {
+export const Characters = ({ data, search }) => {
     return (
         <StyledWrapper>
             {data ? (
@@ -18,7 +18,7 @@ export const Characters = ({ data }) => {
                 ))
             ) :
                 (
-                    <Failure />
+                    <Failure search={search} />
                 )
             }
         </StyledWrapper>
