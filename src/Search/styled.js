@@ -17,17 +17,17 @@ export const StyledInput = styled.input`
     max-width: 250px;
     width: 100%;
     border: none;
-    border-bottom: 2px solid #22a2bd;
+    border-bottom: 2px solid ${({ theme }) => theme.color.EasternBlue};
     background-color: transparent;
-    color: #22a2bd;
+    color: ${({ theme }) => theme.color.EasternBlue};
     outline: none;
     font-size: 16px;
     font-weight: bold;
     &:focus{
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid ${({ theme }) => theme.color.White};
     };
     &::placeholder{
-        color: #22a2bd99;
+        color: ${({ theme }) => theme.color.EasternBlueLight};
         font-size: 16px;
         transition: opacity 500ms;
     };
@@ -41,39 +41,39 @@ export const StyledSelect = styled.select`
     padding: 7px 10px;
     font-size: 14px;
     border: none;
-    border-bottom: 2px solid #22a2bd;
+    border-bottom: 2px solid ${({ theme }) => theme.color.EasternBlue};
     background-color: transparent;
-    color: #22a2bd;
+    color: ${({ theme }) => theme.color.EasternBlue};
     outline: none;
     cursor: pointer;
     &:focus{
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid ${({ theme }) => theme.color.White};
     };
 `;
 export const StyledSpan = styled.span`
-    color: #fff;
-    display:inline-block;
+    color: ${({ theme }) => theme.color.White};
+    display: inline-block;
 `;
 export const StyledButton = styled.button`
     font-family: 'Kanit', sans-serif;
     flex-basis: 11%;
     align-self: flex-end;
     padding: 7px;
-    background-color: #22a2bd;
+    background-color: ${({ theme }) => theme.color.EasternBlue};
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: ${({ theme }) => theme.color.White};
     font-size: 15px;
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 1px 1px 4px ${({ theme }) => theme.color.White};
     cursor: pointer; 
     transition: 300ms;
     &:hover{
-        background-color: #1f91aa;
+        background-color: ${({ theme }) => theme.color.EasternBlueDark};
     }
 `;
 export const StyledOption = styled.option`
-    background-color: #000;
-    color: #fff;
+    background-color: ${({ theme }) => theme.color.Black};
+    color: ${({ theme }) => theme.color.White};
     font-size: 14px;
     border-radius: 5px;
 `;
