@@ -24,17 +24,17 @@ export const GlobalStyle = createGlobalStyle`
     background-attachment: fixed;
     font-family: 'Kanit', sans-serif;
 };
-@media(max-width: 1300px) {
+@media(max-width: ${({theme}) => theme.breakpoints.firstBreakPoint}px) {
   body {
     background-image: url("${background1}");
   };
 };
-@media(max-width: 992px) {
+@media(max-width: ${({theme}) => theme.breakpoints.smallScreens}px) {
   body {
     background-image: url("${background2}");
   };
 };
-@media(max-width: 767px) {
+@media(max-width: ${({theme}) => theme.breakpoints.mobileMax}px) {
   body {
     background-image: url("${background3}");
   };

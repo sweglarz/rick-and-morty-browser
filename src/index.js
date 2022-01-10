@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyle/>
+    <GlobalStyle theme={theme}/>
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
