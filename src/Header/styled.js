@@ -7,7 +7,7 @@ export const StyledImage = styled.img`
 `;
 export const StyledParagraph = styled.p`
     font-family: 'Creepster', cursive;
-    color: ${({theme}) => theme.color.White};
+    color: ${({ theme }) => theme.color.White};
     max-width: 500px;
     font-size: 40px;
     margin: 0 auto 30px;

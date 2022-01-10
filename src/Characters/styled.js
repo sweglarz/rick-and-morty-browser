@@ -9,6 +9,7 @@ export const StyledWrapper = styled.div`
 export const StyledCharacter = styled.div`
     flex-basis: 220px; 
     position: relative;
+    padding: 0 10px;
 `;
 export const StyledImage = styled.img`
     max-width: 100%;
@@ -31,7 +32,7 @@ export const StyledParagraphStatus = styled.p`
     color: ${({theme}) => theme.color.White};
     margin: 8px auto;
     top: 0; 
-    left: 5px;
+    left: 15px;
     border-radius: 0 12px;
     padding: 4px 12px;
     letter-spacing: 2px;
