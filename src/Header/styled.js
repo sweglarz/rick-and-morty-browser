@@ -12,4 +12,8 @@ export const StyledParagraph = styled.p`
     font-size: 40px;
     margin: 0 auto 30px;
     text-align: right;
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        font-size: 32px;
+ };
 `;
