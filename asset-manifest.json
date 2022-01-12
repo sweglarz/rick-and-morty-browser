@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/rick-and-morty-browser/static/js/main.5fbb6f6c.js",
+    "main.js": "/rick-and-morty-browser/static/js/main.2c83b298.js",
     "static/js/787.9419f5b0.chunk.js": "/rick-and-morty-browser/static/js/787.9419f5b0.chunk.js",
     "static/media/title.png": "/rick-and-morty-browser/static/media/title.c9ae1c728fb542a7badb.png",
     "static/media/background.png": "/rick-and-morty-browser/static/media/background.2c7003523484077d1d06.png",
@@ -11,10 +11,10 @@
     "static/media/background_br3.jpg": "/rick-and-morty-browser/static/media/background_br3.baffcc1dafc8db44642e.jpg",
     "static/media/api_fail.png": "/rick-and-morty-browser/static/media/api_fail.ac92d4d030c833c1afb8.png",
     "index.html": "/rick-and-morty-browser/index.html",
-    "main.5fbb6f6c.js.map": "/rick-and-morty-browser/static/js/main.5fbb6f6c.js.map",
+    "main.2c83b298.js.map": "/rick-and-morty-browser/static/js/main.2c83b298.js.map",
     "787.9419f5b0.chunk.js.map": "/rick-and-morty-browser/static/js/787.9419f5b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.5fbb6f6c.js"
+    "static/js/main.2c83b298.js"
   ]
 }
