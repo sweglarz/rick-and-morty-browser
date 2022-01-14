@@ -7,8 +7,10 @@ export const theme = {
         Conifer: "#6FE147",
         White: "#ffffff",
         Black: "#000000",
+        BlackLight: "#00000091",
         EasternBlueLight: "#22a2bd99",
-        EasternBlueDark: "#1f91aa",
+        EasterBlueLightPlus: "#22a2bdd6",
+        EasternBlueDark: "#1f91aa"
     },
     breakpoints: {
         mobile: 480,
