@@ -72,8 +72,12 @@ export const StyledCharacterButton = styled.button`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-    top: 220px;
+        top: 220px;
         width: 250px
+ };
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallMobile}px) {
+        top: 205px;
+        width: 234px
  };
 `;
 export const StyledDetails = styled.div`
@@ -95,6 +99,9 @@ export const StyledCharacterDetails = styled.div`
     border-radius: 0 0 25px 25px;
     box-shadow: 0px 0px 30px 4px ${({ theme }) => theme.color.Black};
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        max-width: 250px;
+ };
 `;
 export const StyledCharacterDetailsButton = styled.button`
     position: absolute;
@@ -133,6 +140,10 @@ export const StyledDetailsParagraphStatus = styled.p`
     padding: 4px 12px;
     letter-spacing: 2px;
     font-size: 18px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        top: 210px; 
+
+ };
 `;
 export const StyledDetailsAliveStatus = styled(StyledDetailsParagraphStatus)`
     background-color: ${({ theme }) => theme.color.Green};

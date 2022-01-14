@@ -13,6 +13,7 @@ export const theme = {
         EasternBlueDark: "#1f91aa"
     },
     breakpoints: {
+        smallMobile: 320,
         mobile: 480,
         mobileMax: 767,
         smallScreens: 952,
