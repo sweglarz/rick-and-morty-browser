@@ -29,7 +29,7 @@ export const StyledImage = styled.img`
 export const StyledParagraphName = styled.p`
     color: ${({ theme }) => theme.color.White};
     font-size:18px;
-    margin: 8px 0 8px;
+    margin: 6px 0 30px;
 `;
 export const StyledParagraphStatus = styled.p`
     position: absolute;
@@ -63,7 +63,7 @@ export const StyledCharacterButton = styled.button`
     width: 190px;
     font-size: 16px;
     text-shadow: 0px 0px 4px ${({ theme }) => theme.color.Black};
-    background-color: ${({ theme }) => theme.color.EasterBlueLightPlus};
+    background-color: ${({ theme }) => theme.color.EasternBlueLightPlus};
     cursor: pointer;
     transition: 400ms;
 
