@@ -8,7 +8,7 @@ export const useCharacters = () => {
     const [status, setStatus] = useState("");
     const [gender, setGender] = useState("");
     const [species, setSpecies] = useState("");
-    const { data } = characters;
+    const { data, info } = characters;
     const api = `https://rickandmortyapi.com/api/character/?page=${page}&name=${search}&status=${status}&gender=${gender}&species=${species}`;
 
     useEffect(() => {
@@ -32,7 +32,7 @@ export const useCharacters = () => {
         setTimeout(getCharacters);
     }, [api]);
 
-    return { data, setPage, setSearch, setStatus, setGender, setSpecies, search, characters };
+    return { data, info, page, setPage, setSearch, setStatus, setGender, setSpecies, search, characters };
 };
 
 
