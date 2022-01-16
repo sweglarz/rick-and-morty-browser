@@ -1,5 +1,4 @@
 # Rick and Morty - browser
-Here you can see the current state => 
 ## Description 
 Search for your favorite characters using this browser!
 Have fun! => [Click](https://sweglarz.github.io/rick-and-morty-browser/)
