@@ -4,12 +4,7 @@ export const Pagination = ({info, setPage, page}) => {
 
     const changePage = (page) => {
         setPage(page.selected +1)
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
-    }
+    };
     return (
         <StyledPagination
             previousLabel={"Previous"}
@@ -20,5 +15,5 @@ export const Pagination = ({info, setPage, page}) => {
             marginPagesDisplayed={1}
             pageRangeDisplayed={1}
         />
-    )
-} 
+    );
+};
