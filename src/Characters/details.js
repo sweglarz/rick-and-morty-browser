@@ -17,14 +17,14 @@ import {
     StyledDetailsParagraph,
     StyledDetailsSpan,
     StyledButtonSpan
-} from "./styled"
+} from "./styled";
 
 export const CharactersDetails = ({ character }) => {
     const [details, setDetails] = useState(false);
 
     const showDetails = () => {
         setDetails(!details)
-    }
+    };
     return (
         <>
             <StyledCharacter key={character.id}>
@@ -66,4 +66,4 @@ export const CharactersDetails = ({ character }) => {
             )}
         </>
     )
-}
+};

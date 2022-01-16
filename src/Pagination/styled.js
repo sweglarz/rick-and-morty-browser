@@ -30,12 +30,10 @@ export const StyledPagination = styled(ReactPaginate).attrs({
   .active{
       background-color: ${({ theme }) => theme.color.Limeade};
 };
-  
   .page{
       border-radius: 5px;
       margin: 0;
 };
-
   .pageLink{
       display: block;
       width: 40px;
@@ -49,21 +47,18 @@ export const StyledPagination = styled(ReactPaginate).attrs({
         padding: 3px;
     };
 };
-
   .pageLink:hover{
       background-color: ${({ theme }) => theme.color.Conifer}
 };
   .activeLink:hover{
       background-color: ${({ theme }) => theme.color.Limeade}
 };
-
   .dots{
       display: flex;
       align-items: flex-end;
       letter-spacing: 3px;
       cursor: pointer;
 };
-
   .previous{
       background-color: ${({ theme }) => theme.color.Limeade};
       cursor: pointer;
@@ -71,7 +66,7 @@ export const StyledPagination = styled(ReactPaginate).attrs({
       transition: 300ms;
       &:hover{
         background-color: ${({ theme }) => theme.color.JapaneseLaurel};
-      }
+      };
 };
   .previous.disabled{
       background-color: ${({ theme }) => theme.color.DustyGray};
@@ -90,7 +85,7 @@ export const StyledPagination = styled(ReactPaginate).attrs({
       transition: 300ms;
       &:hover{
         background-color: ${({ theme }) => theme.color.JapaneseLaurel};
-      }
+      };
 };
   .next.disabled{
       background-color: ${({ theme }) => theme.color.DustyGray};

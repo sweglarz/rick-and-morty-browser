@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import background from "../images/details_background.png";
 
-
 export const StyledWrapper = styled.div`
     margin-top: 40px;
     display: flex;
@@ -69,7 +68,7 @@ export const StyledCharacterButton = styled.button`
 
     &:hover{
     background-color: ${({ theme }) => theme.color.EasternBlueDark};
-    }
+    };
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         top: 220px;
@@ -117,17 +116,19 @@ export const StyledCharacterDetailsButton = styled.button`
     background-color: ${({ theme }) => theme.color.EasternBlue};
     cursor: pointer;
     transition: 400ms;
+
     &:hover{
     background-color: ${({ theme }) => theme.color.EasternBlueDark};
-    }
+    };
 `;
 export const StyledButtonSpan = styled.span`
     display: inline-block;
     padding: 6px 12px;
     transition: 400ms;
+
     &:hover{
     transform: rotate(180deg);
-    }
+    };
 `
 export const StyledDetailsImage = styled.img`
     width: 100%;
@@ -142,12 +143,10 @@ export const StyledDetailsParagraphStatus = styled.p`
     font-size: 18px;
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         top: 210px; 
-
  };
 `;
 export const StyledDetailsAliveStatus = styled(StyledDetailsParagraphStatus)`
     background-color: ${({ theme }) => theme.color.Green};
-    
 `;
 export const StyledDetailsDeadStatus = styled(StyledDetailsParagraphStatus)`
     background-color: ${({ theme }) => theme.color.Red};
@@ -155,7 +154,6 @@ export const StyledDetailsDeadStatus = styled(StyledDetailsParagraphStatus)`
 export const StyledDetailsUnknownStatus = styled(StyledDetailsParagraphStatus)`
     background-color: ${({ theme }) => theme.color.DustyGray};
 `;
-
 export const StyledDetailsParagraph = styled.p`
     color: ${({ theme }) => theme.color.White};
     width: 100%;
@@ -164,8 +162,7 @@ export const StyledDetailsParagraph = styled.p`
     text-align: left;
     word-break: break-all;
     text-shadow: 0px 0px 4px ${({ theme }) => theme.color.Black};
-`
+`;
 export const StyledDetailsSpan = styled.span`
     color: ${({ theme }) => theme.color.EasternBlue};
-
-`
+`;

@@ -7,7 +7,7 @@ export const StyledForm = styled.form`
     @media (max-width: ${({ theme }) => theme.breakpoints.firstBreakPoint}px) {
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 0 15px ;
+        padding: 0 15px;
  };
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         justify-content: space-between;
@@ -25,7 +25,6 @@ export const StyledLabel = styled.label`
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         flex-basis: 100%;
  };
- 
 `;
 export const StyledSearch = styled(StyledLabel)`
     flex-basis: 25%;

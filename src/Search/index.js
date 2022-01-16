@@ -11,10 +11,10 @@ import {
 import { status, gender, species } from "../useFilters";
 
 export const Search = ({ setSearch, setStatus, setPage, setGender, setSpecies }) => {
+    
     const onFormSubmit = (event) => {
         event.preventDefault()
     };
-
     return (
         <StyledForm onSubmit={onFormSubmit}>
             <StyledLabel>
