@@ -1,7 +1,24 @@
-# In progress...
+# Rick and Morty - browser
+Here you can see the current state => 
+## Description 
+Search for your favorite characters using this browser!
+Have fun! => [Click](https://sweglarz.github.io/rick-and-morty-browser/)
 
-Here you can see the current state => [Click](https://sweglarz.github.io/rick-and-morty-browser/)
-
+Look below how it works: 
+![R&M - browser](https://github.com/sweglarz/rick-and-morty-browser/blob/main/src/images/rickmorty.gif?raw=true)
+## Technologies 
+- HTML, 
+- ES6,
+- MediaQueries,
+- Styled Components,
+- React.js, 
+- React Paginate,
+- React Hooks,
+- Create-React-App, 
+- Babel, 
+- Async/Await,
+- Axios,
+- Webpack. 
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
