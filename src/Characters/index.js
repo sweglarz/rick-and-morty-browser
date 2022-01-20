@@ -2,21 +2,19 @@ import { Failure } from "../Failure";
 import {
     StyledWrapper
 } from "./styled";
-import { useCharacters } from "../useCharacters";
 import { FetchingError } from "../FetchingError";
 import { Loading } from "../Loading";
 import { CharactersDetails } from "./details";
 
-export const Characters = ({ data, search }) => {
-    const { characters } = useCharacters();
+export const Characters = ({ data, search, state }) => {
 
     return (
         <StyledWrapper>
-            {characters.state === "loading"
+            {state === "loading"
                 ? (
                     <Loading />
                 )
-                : (characters.state === "error"
+                : (state === "error"
                     ? (
                         <FetchingError />
                     )
@@ -24,12 +22,10 @@ export const Characters = ({ data, search }) => {
                         <>
                             {data ? (
                                 data.map((character) => (
-                                    <>
-                                        <CharactersDetails
-                                            key={character.id}
-                                            character={character}
-                                        />
-                                    </>
+                                    <CharactersDetails
+                                        key={character.id}
+                                        character={character}
+                                    />
                                 ))
                             )
                                 : (

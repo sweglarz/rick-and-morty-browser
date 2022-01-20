@@ -6,7 +6,7 @@ import { Search } from './Search';
 import { useCharacters } from "./useCharacters";
 
 function App() {
-  const { data, info, page, setPage, setSearch, setStatus, setGender, setSpecies, search } = useCharacters();
+  const { data, info, page, setPage, setSearch, setStatus, setGender, setSpecies, search, state } = useCharacters();
 
   return (
     <>
@@ -19,6 +19,7 @@ function App() {
           setGender={setGender}
           setSpecies={setSpecies} />
         <Characters
+          state={state}
           data={data}
           search={search}
         />
