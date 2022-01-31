@@ -1,4 +1,3 @@
-import { Failure } from "../Failure";
 import {
     StyledWrapper
 } from "./styled";
@@ -20,17 +19,13 @@ export const Characters = ({ data, search, state }) => {
                     )
                     : (
                         <>
-                            {data ? (
-                                data.map((character) => (
+                            {
+                                data?.map((character) => (
                                     <CharactersDetails
                                         key={character.id}
                                         character={character}
                                     />
                                 ))
-                            )
-                                : (
-                                    <Failure search={search} />
-                                )
                             }
                         </>
                     ))
