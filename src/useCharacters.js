@@ -29,7 +29,9 @@ export const useCharacters = () => {
                 });
             };
         };
-        getCharacters();
+        setTimeout(() => {
+            getCharacters();
+        }, 500)
     }, [api]);
 
     return { data, info, page, setPage, setSearch, setStatus, setGender, setSpecies, search, characters, state };
